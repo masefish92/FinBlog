@@ -13,6 +13,12 @@
       duration: 1.1,
       easing: (t)=> Math.min(1, 1 - Math.pow(2, -10 * t)),
       smoothWheel: true,
+      // Touch devices keep native scrolling. Lenis's touch-sync path applies a
+      // transform to the scroller, which creates a new containing block for
+      // position:fixed descendants (like the mobile nav overlay) and breaks
+      // their positioning mid-scroll.
+      syncTouch: false,
+      smoothTouch: false,
     });
     if (window.gsap){
       if (window.ScrollTrigger) lenis.on('scroll', ScrollTrigger.update);

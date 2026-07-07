@@ -46,7 +46,7 @@
 
 @media (max-width: 760px){
   .nav-links{
-    position:fixed; inset:0; z-index:490; background:var(--ink-950);
+    position:fixed; top:0; left:0; right:0; height:100vh; height:100dvh; z-index:490; background:var(--ink-950);
     flex-direction:column; justify-content:center; gap:var(--sp-4);
     transform:translateY(-100%); transition:transform var(--dur-med) var(--ease-in-out);
   }
@@ -109,7 +109,7 @@
   margin-top:var(--sp-7);
 }
 .footer-grid{
-  display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:var(--sp-5);
+  display:grid; grid-template-columns:1.2fr repeat(4,1fr); gap:var(--sp-4);
   padding-bottom:var(--sp-6);
 }
 .footer-col h4{
@@ -127,6 +127,26 @@
 @media (max-width: 900px){
   .footer-grid{ grid-template-columns:1fr 1fr; }
   .footer-bottom{ flex-direction:column; gap:var(--sp-2); align-items:flex-start; }
+}
+
+/* ---------- Ad slots (placeholders — no live ad code yet, see REPORT.md) ---------- */
+.ad-slot{
+  position:relative; margin:var(--sp-6) auto; display:flex; align-items:center; justify-content:center;
+  background:var(--bg-raised); border:1px dashed var(--hairline-strong); border-radius:var(--radius-md);
+  overflow:hidden; max-width:100%;
+}
+.ad-slot::before{
+  content:'Advertisement'; position:absolute; top:8px; left:14px; font-family:var(--font-mono); font-size:10px;
+  text-transform:uppercase; letter-spacing:.08em; color:var(--text-tertiary);
+}
+.ad-slot-label{ font-family:var(--font-mono); font-size:var(--fs-xs); color:var(--text-tertiary); text-align:center; line-height:1.6; }
+.ad-slot-label small{ display:block; margin-top:2px; opacity:0.65; }
+
+.ad-slot--incontent{ width:336px; height:280px; }
+.ad-slot--banner{ width:728px; height:90px; }
+@media (max-width:760px){
+  .ad-slot--incontent{ width:300px; height:250px; }
+  .ad-slot--banner{ width:300px; height:250px; }
 }
 
 /* ---------- Page hero label (used on interior pages) ---------- */

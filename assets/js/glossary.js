@@ -90,5 +90,12 @@
   };
   window.addEventListener('scroll', onScroll, { passive:true });
 
+  // Support ?q= so the WebSite SearchAction (JSON-LD) is a real, working search.
+  const presetQuery = new URLSearchParams(location.search).get('q');
+  if (presetQuery) {
+    searchInput.value = presetQuery;
+    query = presetQuery;
+  }
+
   render();
 })();

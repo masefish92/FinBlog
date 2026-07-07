@@ -1,0 +1,63 @@
+/* ============================================================ Simple content pages (About, Contact, Disclaimer, Editorial Standards) ============================================================ */
+
+.prose{ max-width:68ch; }
+.prose h2{ font-size:var(--fs-lg); margin-top:var(--sp-5); margin-bottom:var(--sp-2); }
+.prose h2:first-child{ margin-top:0; }
+.prose p{ color:var(--text-secondary); font-size:var(--fs-base); line-height:1.7; margin-bottom:var(--sp-3); }
+.prose p:last-child{ margin-bottom:0; }
+.prose ul{ margin:var(--sp-2) 0 var(--sp-3); display:flex; flex-direction:column; gap:0.6em; }
+.prose li{ color:var(--text-secondary); font-size:var(--fs-base); line-height:1.6; padding-left:1.4em; position:relative; }
+.prose li::before{ content:'—'; position:absolute; left:0; color:var(--text-tertiary); }
+.prose a{ color:var(--emerald-bright); text-decoration:underline; text-underline-offset:3px; }
+.prose a:hover{ color:var(--amber-bright); }
+.prose strong{ color:var(--text-primary); font-weight:600; }
+.prose .lede{ font-family:var(--font-display); font-size:var(--fs-md); color:var(--text-primary); line-height:1.4; margin-bottom:var(--sp-4); }
+
+.about-head{ display:flex; gap:var(--sp-4); align-items:center; margin-bottom:var(--sp-5); }
+.about-avatar{
+  width:88px; height:88px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(160deg, var(--emerald), var(--ink-800)); font-family:var(--font-display); font-style:italic;
+  font-size:2.2rem; color:var(--paper-100); border:1px solid var(--hairline-strong);
+}
+.about-head h1{ font-size:var(--fs-xl); line-height:1; }
+.about-head .role{ margin-top:0.4em; color:var(--text-secondary); font-family:var(--font-mono); font-size:var(--fs-sm); }
+
+.contact-card{
+  background:var(--bg-card); border:1px solid var(--hairline); border-radius:var(--radius-md);
+  padding:var(--sp-4); margin-top:var(--sp-4); max-width:68ch;
+}
+.contact-card h3{ font-family:var(--font-mono); font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:.08em; color:var(--text-tertiary); margin-bottom:0.6em; }
+.contact-card a{ font-family:var(--font-mono); font-size:var(--fs-md); color:var(--emerald-bright); }
+.contact-card a:hover{ color:var(--amber-bright); }
+
+/* ---------- Byline (compact, under a headline) ---------- */
+.byline{
+  display:flex; flex-wrap:wrap; align-items:center; gap:0.6em; margin-top:var(--sp-3);
+  font-family:var(--font-mono); font-size:var(--fs-xs); color:var(--text-tertiary); text-transform:uppercase; letter-spacing:.06em;
+}
+.byline a{ color:var(--text-secondary); text-decoration:underline; text-underline-offset:3px; }
+.byline a:hover{ color:var(--emerald-bright); }
+.byline .dot{ opacity:0.5; }
+
+/* ---------- Author bio box (bottom of articles) ---------- */
+.author-box{
+  display:flex; gap:var(--sp-3); align-items:flex-start; background:var(--bg-card);
+  border:1px solid var(--hairline); border-radius:var(--radius-md); padding:var(--sp-4); margin-top:var(--sp-6); max-width:68ch;
+}
+.author-box-avatar{
+  width:56px; height:56px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(160deg, var(--emerald), var(--ink-800)); font-family:var(--font-display); font-style:italic;
+  font-size:1.3rem; color:var(--paper-100); border:1px solid var(--hairline-strong);
+}
+.author-box-name{ font-family:var(--font-display); font-size:var(--fs-md); }
+.author-box-name a{ color:inherit; }
+.author-box-name a:hover{ color:var(--emerald-bright); }
+.author-box p{ color:var(--text-secondary); font-size:var(--fs-sm); margin-top:0.4em; line-height:1.55; }
+.author-box-links{ margin-top:0.7em; display:flex; gap:1.2em; }
+.author-box-links a{ font-family:var(--font-mono); font-size:var(--fs-xs); color:var(--emerald-bright); text-transform:uppercase; letter-spacing:.05em; }
+.author-box-links a:hover{ color:var(--amber-bright); }
+
+@media (max-width:600px){
+  .author-box{ flex-direction:column; }
+  .about-head{ flex-direction:column; align-items:flex-start; }
+}

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..800;1,400..800&display=swap');
+/* Font stylesheets are loaded via <link rel="preconnect"/"stylesheet"> tags in
+   each page's <head> (not @import here) — @import is sequential and render-blocking,
+   while <link> tags let the browser fetch fonts in parallel with everything else. */
 
 /* Native cross-page transitions in supporting browsers; silently ignored elsewhere. */
 @view-transition{ navigation:auto; }

@@ -18,6 +18,8 @@
   background:var(--ink-850); border-bottom:1px solid var(--hairline); padding:var(--sp-2) 0;
   font-family:var(--font-mono); font-size:var(--fs-xs); color:var(--text-tertiary); text-align:center;
 }
+.disclaimer-bar a, .diy-box a{ color:var(--emerald-bright); text-decoration:underline; text-underline-offset:2px; }
+.disclaimer-bar a:hover, .diy-box a:hover{ color:var(--amber-bright); }
 
 .chart-section{ padding-block:var(--sp-6); border-bottom:1px solid var(--hairline); }
 .chart-card{

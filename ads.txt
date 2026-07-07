@@ -1,0 +1,8 @@
+# ads.txt — Authorized Digital Sellers
+# https://iabtechlab.com/ads-txt/
+#
+# TODO before enabling ads: replace PUB-ID-HERE with your actual AdSense
+# publisher ID (format: pub-XXXXXXXXXXXXXXXX), found in AdSense under
+# Account > Account information. Uncomment the line below once you have it.
+#
+# google.com, pub-PUB-ID-HERE, DIRECT, f08c47fec0942fa0

@@ -3,13 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reading the Three Statements — The Margin</title>
-<meta name="description" content="A line-by-line, annotated walkthrough of the income statement, balance sheet, and cash flow statement using one worked example company throughout.">
+<title>How to Read Financial Statements: A Line-by-Line Guide</title>
+<meta name="description" content="Learn to read the income statement, balance sheet, and cash flow statement together, line by line, using one worked example plus a graded practice worksheet.">
+<link rel="canonical" href="https://finblog-murex.vercel.app/guides/financial-statements.html">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-style=%22italic%22 font-family=%22Georgia,serif%22 fill=%22%234bf0b3%22>M</text></svg>">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Margin">
+<meta property="og:title" content="How to Read Financial Statements: A Line-by-Line Guide">
+<meta property="og:description" content="Learn to read the income statement, balance sheet, and cash flow statement together, line by line, using one worked example plus a graded practice worksheet.">
+<meta property="og:url" content="https://finblog-murex.vercel.app/guides/financial-statements.html">
+<meta property="og:image" content="https://finblog-murex.vercel.app/assets/images/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Read Financial Statements: A Line-by-Line Guide">
+<meta name="twitter:description" content="Learn to read the income statement, balance sheet, and cash flow statement together, line by line, using one worked example plus a graded practice worksheet.">
+<meta name="twitter:image" content="https://finblog-murex.vercel.app/assets/images/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..800;1,400..800&display=swap">
+
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/guides.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://finblog-murex.vercel.app/#organization",
+    "name": "The Margin",
+    "url": "https://finblog-murex.vercel.app/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://finblog-murex.vercel.app/assets/images/og-default.png",
+      "width": 1200,
+      "height": 630
+    },
+    "description": "A finance publication explaining terms, financial statements, and company research in plain English."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://finblog-murex.vercel.app/#website",
+    "url": "https://finblog-murex.vercel.app/",
+    "name": "The Margin",
+    "publisher": {
+      "@id": "https://finblog-murex.vercel.app/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://finblog-murex.vercel.app/glossary/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://finblog-murex.vercel.app/about/#person",
+    "name": "Marcus Mase",
+    "url": "https://finblog-murex.vercel.app/about/",
+    "description": "Marcus Mase is a CPA who works in tech, writing about markets, corporate finance, and how to actually read a financial statement.",
+    "knowsAbout": [
+      "Accounting",
+      "Corporate Finance",
+      "Equity Research",
+      "Financial Statement Analysis"
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "professional certification",
+      "name": "Certified Public Accountant (CPA)"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://finblog-murex.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://finblog-murex.vercel.app/guides/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Reading the Three Statements",
+        "item": "https://finblog-murex.vercel.app/guides/financial-statements.html"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Read Financial Statements: A Line-by-Line Guide",
+    "description": "Learn to read the income statement, balance sheet, and cash flow statement together, line by line, using one worked example plus a graded practice worksheet.",
+    "image": "https://finblog-murex.vercel.app/assets/images/og-default.png",
+    "datePublished": "2026-07-07",
+    "dateModified": "2026-07-07",
+    "author": {
+      "@type": "Person",
+      "@id": "https://finblog-murex.vercel.app/about/#person",
+      "name": "Marcus Mase",
+      "url": "https://finblog-murex.vercel.app/about/"
+    },
+    "publisher": {
+      "@id": "https://finblog-murex.vercel.app/#organization"
+    },
+    "mainEntityOfPage": "https://finblog-murex.vercel.app/guides/financial-statements.html"
+  }
+]
+</script>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
@@ -29,6 +151,7 @@
     <span class="eyebrow">Guide 01 — 12 minute read</span>
     <h1 data-split>Three statements. One company.</h1>
     <p>Companies split one financial story into three documents partly for accounting reasons, and partly because it discourages casual readers from looking past the first page. We're going to walk all three, line by line, using a single fictional company — <b style="color:var(--text-primary)">Loom Coffee Co.</b>, a small regional roaster — so the numbers stay connected instead of floating in the abstract.</p>
+    <div class="byline">By <a href="../about/">Marcus Mase</a><span class="dot">·</span>Published <time datetime="2026-07-07">Jul 7, 2026</time><span class="dot">·</span>Updated <time datetime="2026-07-07">Jul 7, 2026</time></div>
   </div>
 
   <nav class="guide-nav wrap">
@@ -228,6 +351,10 @@
       </div>
     </div>
     <p style="max-width:56ch;margin:var(--sp-4) auto 0;color:var(--text-tertiary);font-size:var(--fs-sm);" data-reveal>If a company's ending cash doesn't tie to its balance sheet, or retained earnings doesn't move the way net income and dividends imply, that's not a rounding error — it's a filing worth reading twice.</p>
+
+    <div class="ad-slot ad-slot--incontent" data-ad-slot="guide-incontent-1" aria-label="Advertisement placeholder">
+      <span class="ad-slot-label">Ad slot — 336×280<small>Reserved space, not yet active</small></span>
+    </div>
   </section>
 
   <!-- ============ SELF CHECK ============ -->
@@ -250,6 +377,18 @@
         <span class="checkme-result" id="check-result"></span>
       </div>
     </div>
+
+    <div class="author-box" data-reveal>
+      <div class="author-box-avatar">MM</div>
+      <div>
+        <div class="author-box-name"><a href="../about/">Marcus Mase</a></div>
+        <p>A CPA who works in tech, writing about markets and corporate finance. This guide was published Jul 7, 2026 and last updated Jul 7, 2026.</p>
+        <div class="author-box-links">
+          <a href="../about/">More about the author</a>
+          <a href="../editorial-standards/">Editorial standards</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="closer wrap">
@@ -257,6 +396,12 @@
     <h2 data-reveal style="margin-top:var(--sp-3);">Numbers cold?<br>Meet the <em>companies.</em></h2>
     <a href="../research/" class="btn btn-solid" data-reveal>Go to research<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
   </section>
+
+  <div class="wrap" style="display:flex;justify-content:center;">
+    <div class="ad-slot ad-slot--banner" data-ad-slot="guide-postcontent-1" aria-label="Advertisement placeholder">
+      <span class="ad-slot-label">Ad slot — 728×90<small>Reserved space, not yet active</small></span>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer wrap">
@@ -279,6 +424,12 @@
       <a href="../research/apple.html">Apple</a>
       <a href="../research/nvidia.html">Nvidia</a>
       <a href="../research/costco.html">Costco</a>
+    </div>
+    <div class="footer-col"><h4>Site</h4>
+      <a href="../about/">About</a>
+      <a href="../contact/">Contact</a>
+      <a href="../disclaimer/">Disclaimer</a>
+      <a href="../editorial-standards/">Editorial standards</a>
     </div>
   </div>
   <div class="footer-bottom">
