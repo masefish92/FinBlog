@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nvidia — Research — The Margin</title>
+<meta name="description" content="A plain-language research breakdown of Nvidia: what has to stay true for a 70%+ gross margin to last.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-style=%22italic%22 font-family=%22Georgia,serif%22 fill=%22%234bf0b3%22>M</text></svg>">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/research.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <a href="../index.html" class="brand">The<span class="mark">Margin</span><small>Finance, annotated</small></a>
+  <nav class="nav-links">
+    <a href="../glossary/" data-section="glossary">Glossary</a>
+    <a href="../guides/" data-section="guides">Guides</a>
+    <a href="../research/" data-section="research">Research</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</header>
+
+<main id="main">
+  <div class="wrap company-head">
+    <div>
+      <div class="ticker-row"><span class="badge amber">Cyclical risk</span><span class="badge">Semiconductors &amp; AI infrastructure</span></div>
+      <h1 data-split>Nvidia</h1>
+      <p class="thesis-line">Gross margin above 70% looks incredible until you ask what has to stay true for it to last.</p>
+    </div>
+    <div class="head-stats">
+      <div class="head-stat"><span class="figure" data-count="130.5" data-prefix="$" data-suffix="B">$0B</span><span>FY25 revenue</span></div>
+      <div class="head-stat"><span class="figure" data-count="75" data-suffix="%">0%</span><span>Gross margin</span></div>
+      <div class="head-stat"><span class="figure" data-count="3.3" data-prefix="$" data-suffix="T">$0T</span><span>Market cap (approx.)</span></div>
+      <div class="head-stat"><span class="figure" data-count="36" data-suffix="K">0K</span><span>Employees (approx.)</span></div>
+    </div>
+  </div>
+
+  <div class="disclaimer-bar">Figures are rounded and approximate, compiled for illustrative purposes — verify against Nvidia's actual 10-K on SEC EDGAR before acting on anything here.</div>
+
+  <section class="chart-section wrap">
+    <span class="eyebrow" data-reveal>Six-year trend</span>
+    <h2 style="margin-top:.4em;" data-reveal>The AI buildout shows up as a step function, not a slope.</h2>
+    <div class="chart-card" data-reveal>
+      <div class="chart-legend">
+        <span><i style="background:#18a97a"></i>Revenue ($B)</span>
+        <span><i style="background:#ffcb6b"></i>Gross margin (%)</span>
+      </div>
+      <div id="nvidia-chart"></div>
+    </div>
+  </section>
+
+  <section class="thesis-section wrap">
+    <span class="eyebrow" data-reveal>The thesis</span>
+    <p class="lede" data-reveal>Nvidia doesn't sell chips. It sells the only chips that run the software everyone already built.</p>
+    <div class="thesis-body">
+      <div data-reveal>
+        <p>The hardware is genuinely excellent, but the durable part of the moat is CUDA — Nvidia's software layer that most AI research and production code has been written against for over a decade. Switching to a competitor's chip isn't just a hardware swap; it means rewriting and re-validating software stacks, which is exactly the kind of switching cost that protects pricing power even when a rival ships a technically comparable chip.</p>
+        <p>That's why gross margin jumped so sharply rather than drifting up gradually: demand for AI training and inference capacity outstripped supply so completely that Nvidia could price well above its historical range without losing customers who had no credible alternative on a useful timeline.</p>
+      </div>
+      <div data-reveal>
+        <p>The concentration risk is the flip side of that same story. A small number of hyperscale customers — the largest cloud providers — account for an outsized share of revenue, and several of them are simultaneously funding their own custom AI chips specifically to reduce dependence on Nvidia. Customers who are also your best-funded potential competitors is an unusual position to be in.</p>
+        <p>Semiconductor demand has also always been cyclical. The current buildout could be the start of a durable new baseline of AI infrastructure spending, or it could be a capacity boom that overshoots and corrects — those two scenarios produce very different five-year revenue paths from the same starting point today.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="debate wrap">
+    <span class="eyebrow" data-reveal>Where reasonable people disagree</span>
+    <h2 style="margin-top:.4em;font-size:var(--fs-lg);" data-reveal>Bull case vs. bear case</h2>
+    <div class="debate-grid">
+      <div class="debate-col bull" data-reveal>
+        <h4>Bull case</h4>
+        <ul>
+          <li>CUDA's software lock-in means even at-parity competing chips face a real adoption barrier.</li>
+          <li>AI infrastructure spending looks more like a durable capex cycle than a one-off boom, based on current guidance.</li>
+          <li>Full-stack expansion (networking, software, systems) raises the average deal size beyond just the chip.</li>
+          <li>Supply remains the binding constraint, not demand — a rare position for a hardware company to be in.</li>
+        </ul>
+      </div>
+      <div class="debate-col bear" data-reveal>
+        <h4>Bear case</h4>
+        <ul>
+          <li>Top customers are simultaneously Nvidia's biggest revenue source and its most motivated future competitors.</li>
+          <li>73%+ gross margins invite competition and pricing pressure almost by definition — that's rarely a stable equilibrium.</li>
+          <li>Export restrictions on advanced chips to certain markets are a real, ongoing revenue risk, not a hypothetical one.</li>
+          <li>A slowdown in AI capex growth — not even a decline, just deceleration — could re-rate the stock sharply given current expectations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="watch-list wrap">
+    <span class="eyebrow" data-reveal>What to watch next</span>
+    <div class="watch-grid">
+      <div class="watch-item" data-reveal><span class="wi-num">01</span><p>Customer concentration disclosures — the percentage of revenue from the top handful of buyers, and whether it's rising or falling.</p></div>
+      <div class="watch-item" data-reveal><span class="wi-num">02</span><p>Gross margin trajectory as competitors ship viable alternatives — the first real test of CUDA's pricing power.</p></div>
+      <div class="watch-item" data-reveal><span class="wi-num">03</span><p>Capex guidance from the largest hyperscale customers — Nvidia's demand curve is effectively their spending plan.</p></div>
+    </div>
+  </section>
+
+  <section class="diy-box wrap">
+    <span class="eyebrow" data-reveal>Don't take our word for it</span>
+    <h2 data-reveal style="margin-top:var(--sp-3);font-size:var(--fs-xl);">Pull the actual 10-K.</h2>
+    <p data-reveal>Nvidia's filings are free on SEC EDGAR. Search "NVDA 10-K" and open the "Concentration of Revenue" note — it names the customer concentration explicitly, in Nvidia's own words.</p>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-wordmark">The Margin</div>
+      <p style="max-width:32ch;">A small publication about reading financial statements, and companies, without pretending it's harder than it is.</p>
+    </div>
+    <div class="footer-col"><h4>Read</h4>
+      <a href="../glossary/">Glossary</a>
+      <a href="../guides/">Guides</a>
+      <a href="../research/">Research</a>
+    </div>
+    <div class="footer-col"><h4>Guides</h4>
+      <a href="../guides/financial-statements.html#income">Income statement</a>
+      <a href="../guides/financial-statements.html#balance">Balance sheet</a>
+      <a href="../guides/financial-statements.html#cashflow">Cash flow statement</a>
+    </div>
+    <div class="footer-col"><h4>Research</h4>
+      <a href="apple.html">Apple</a>
+      <a href="nvidia.html">Nvidia</a>
+      <a href="costco.html">Costco</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Margin. Educational content, not investment advice.</span>
+    <span>Not affiliated with Nvidia Corp.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../assets/js/cursor.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scroll.js"></script>
+<script src="../assets/js/research-chart.js"></script>
+<script src="../assets/js/spotlight.js"></script>
+<script>
+  renderRevenueMarginChart(document.getElementById('nvidia-chart'), {
+    years:['FY20','FY21','FY22','FY23','FY24','FY25'],
+    revenue:[10.9,16.7,26.9,27.0,60.9,130.5],
+    margin:[62.0,62.3,64.9,56.9,72.7,75.0],
+    barColor:'#18a97a', lineColor:'#ffcb6b'
+  });
+</script>
+</body>
+</html>

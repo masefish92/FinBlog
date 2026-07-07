@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading the Three Statements — The Margin</title>
+<meta name="description" content="A line-by-line, annotated walkthrough of the income statement, balance sheet, and cash flow statement using one worked example company throughout.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-style=%22italic%22 font-family=%22Georgia,serif%22 fill=%22%234bf0b3%22>M</text></svg>">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/guides.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <a href="../index.html" class="brand">The<span class="mark">Margin</span><small>Finance, annotated</small></a>
+  <nav class="nav-links">
+    <a href="../glossary/" data-section="glossary">Glossary</a>
+    <a href="../guides/" data-section="guides">Guides</a>
+    <a href="../research/" data-section="research">Research</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</header>
+
+<main id="main">
+  <div class="page-head wrap">
+    <span class="eyebrow">Guide 01 — 12 minute read</span>
+    <h1 data-split>Three statements. One company.</h1>
+    <p>Companies split one financial story into three documents partly for accounting reasons, and partly because it discourages casual readers from looking past the first page. We're going to walk all three, line by line, using a single fictional company — <b style="color:var(--text-primary)">Loom Coffee Co.</b>, a small regional roaster — so the numbers stay connected instead of floating in the abstract.</p>
+  </div>
+
+  <nav class="guide-nav wrap">
+    <a href="#income">01 Income statement</a>
+    <a href="#balance">02 Balance sheet</a>
+    <a href="#cashflow">03 Cash flow statement</a>
+    <a href="#synthesis">04 How they connect</a>
+    <a href="#checkme">05 Try it cold</a>
+  </nav>
+
+  <!-- ============ INCOME STATEMENT ============ -->
+  <section class="statement-section wrap" id="income">
+    <div class="statement-head" data-reveal>
+      <span class="badge emerald">Covers one year</span>
+      <h2 style="margin-top:.5em;">The income statement</h2>
+      <p>Answers one question: did the business make money over this period? Hover or tap any line for the annotation. Every figure is in thousands of dollars, fiscal year 2025.</p>
+    </div>
+    <div class="statement-layout">
+      <div class="statement-table" data-reveal>
+        <div class="st-row" data-tag="Top line" data-title="Revenue" data-note="Everything the business collected from selling coffee, before a single cost is subtracted. This is the number headlines call 'sales growth' — it says nothing yet about profit.">
+          <span class="label">Revenue</span><span class="val">$12,400</span>
+        </div>
+        <div class="st-row indent" data-tag="Direct cost" data-title="Cost of goods sold" data-note="The direct cost of the beans, roasting, and packaging that went into what was sold — the cost that scales roughly in step with revenue.">
+          <span class="label">Cost of goods sold</span><span class="val neg">($5,270)</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Gross profit" data-note="Revenue minus COGS. Gross margin here is 57.5% — high for a physical-goods business, and worth asking why: brand pricing power, or a favorable bean-cost year?">
+          <span class="label">Gross profit</span><span class="val">$7,130</span>
+        </div>
+        <div class="st-row indent" data-tag="Operating expense" data-title="SG&amp;A" data-note="Selling, general &amp; administrative — salaries, rent on cafés, marketing, corporate overhead. Doesn't scale as tightly with revenue as COGS does.">
+          <span class="label">SG&amp;A</span><span class="val neg">($3,860)</span>
+        </div>
+        <div class="st-row indent" data-tag="Non-cash expense" data-title="Depreciation &amp; amortization" data-note="Spreading the cost of roasters, café build-outs, and equipment over their useful life. No cash actually left the business this year for this line — that gets added back later in the cash flow statement.">
+          <span class="label">Depreciation &amp; amortization</span><span class="val neg">($410)</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Operating income (EBIT)" data-note="Profit from the actual coffee business, before financing costs or taxes. This is the cleanest read on operating performance, independent of how the company is funded.">
+          <span class="label">Operating income (EBIT)</span><span class="val">$2,860</span>
+        </div>
+        <div class="st-row indent" data-tag="Financing cost" data-title="Interest expense" data-note="The cost of Loom's debt — $3.5M in combined short- and long-term borrowing. This line is why EBIT and net income diverge for leveraged companies.">
+          <span class="label">Interest expense</span><span class="val neg">($240)</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Pretax income" data-note="Operating income minus interest — what's left before the government takes its share.">
+          <span class="label">Pretax income</span><span class="val">$2,620</span>
+        </div>
+        <div class="st-row indent" data-tag="Tax" data-title="Income tax (24%)" data-note="Combined federal and state effective rate. Watch this rate over time — a falling effective tax rate can flatter net income growth without any operating improvement at all.">
+          <span class="label">Income tax (24%)</span><span class="val neg">($629)</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Bottom line" data-title="Net income" data-note="What's actually left for shareholders after every cost, including financing and taxes. This number flows directly into retained earnings on the balance sheet — the first thread connecting the statements.">
+          <span class="label">Net income</span><span class="val pos">$1,991</span>
+        </div>
+      </div>
+      <div class="annotation-panel" data-reveal>
+        <span class="ap-eyebrow">Line item</span>
+        <h4>Revenue</h4>
+        <p>Hover a row to read its annotation.</p>
+        <p class="ap-hint">Tip: subtotals (bold rows) are where the real questions live — they're where assumptions get baked in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BALANCE SHEET ============ -->
+  <section class="statement-section wrap" id="balance">
+    <div class="statement-head" data-reveal>
+      <span class="badge amber">A snapshot, not a period</span>
+      <h2 style="margin-top:.5em;">The balance sheet</h2>
+      <p>Answers a different question: what does the business own, and who has a claim on it? Unlike the income statement, this is a photograph at a single moment — December 31, 2025.</p>
+    </div>
+    <div class="statement-layout">
+      <div class="statement-table" data-reveal>
+        <div class="st-row" data-tag="Current asset" data-title="Cash" data-note="Cash and equivalents on hand at year end. This exact figure — $1,540 — is where the cash flow statement will land us too. That's not a coincidence; it's a required reconciliation.">
+          <span class="label">Cash</span><span class="val">$1,540</span>
+        </div>
+        <div class="st-row" data-tag="Current asset" data-title="Accounts receivable" data-note="Money owed by wholesale customers (cafés, grocers) who bought on credit but haven't paid yet. Rising receivables faster than revenue is a classic early warning sign.">
+          <span class="label">Accounts receivable</span><span class="val">$890</span>
+        </div>
+        <div class="st-row" data-tag="Current asset" data-title="Inventory" data-note="Green coffee, packaging, and finished goods sitting in warehouses. Too much inventory ties up cash; too little risks stockouts.">
+          <span class="label">Inventory</span><span class="val">$1,120</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Total current assets" data-note="Everything expected to convert to cash within a year. Compared against current liabilities, this is the raw material for the current ratio.">
+          <span class="label">Total current assets</span><span class="val">$3,550</span>
+        </div>
+        <div class="st-row" data-tag="Long-term asset" data-title="Property, plant &amp; equipment (net)" data-note="Roasting equipment, café build-outs, and warehouses, net of accumulated depreciation. The 'net' matters — this isn't what it cost, it's what's left to depreciate.">
+          <span class="label">PP&amp;E (net)</span><span class="val">$4,900</span>
+        </div>
+        <div class="st-row" data-tag="Intangible" data-title="Goodwill" data-note="The premium Loom paid three years ago acquiring a competing roaster, above that roaster's fair value. It sits here until, if ever, it gets written down.">
+          <span class="label">Goodwill</span><span class="val">$1,200</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Total" data-title="Total assets" data-note="Everything the company owns or is owed, current and long-term combined. This number must equal total liabilities plus equity — no exceptions, ever.">
+          <span class="label">Total assets</span><span class="val">$9,650</span>
+        </div>
+        <div class="st-row" data-tag="Current liability" data-title="Accounts payable" data-note="What Loom owes its own suppliers — bean farmers, packaging vendors — but hasn't paid yet. Effectively an interest-free loan from suppliers.">
+          <span class="label">Accounts payable</span><span class="val">$640</span>
+        </div>
+        <div class="st-row" data-tag="Current liability" data-title="Short-term debt" data-note="The portion of borrowing due within twelve months — a revolving credit line used to smooth seasonal cash needs.">
+          <span class="label">Short-term debt</span><span class="val">$300</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Total current liabilities" data-note="Bills coming due within a year. Compare this against current assets — Loom's $3,550 versus $940 here is a comfortably healthy cushion.">
+          <span class="label">Total current liabilities</span><span class="val">$940</span>
+        </div>
+        <div class="st-row" data-tag="Long-term liability" data-title="Long-term debt" data-note="A term loan from the acquisition, due over the next six years. This is the balance the interest expense line on the income statement is paying for.">
+          <span class="label">Long-term debt</span><span class="val">$3,200</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Total liabilities" data-note="Everything Loom owes, current and long-term. Total assets minus this figure is, by definition, shareholders' equity.">
+          <span class="label">Total liabilities</span><span class="val">$4,140</span>
+        </div>
+        <div class="st-row" data-tag="Equity" data-title="Common stock &amp; APIC" data-note="Capital raised from shareholders directly, at founding and in a later funding round — separate from any profit the business has since earned.">
+          <span class="label">Common stock &amp; APIC</span><span class="val">$2,000</span>
+        </div>
+        <div class="st-row" data-tag="Equity" data-title="Retained earnings" data-note="Every dollar of net income Loom has ever kept, minus every dollar paid out as dividends, since it was founded. This is where net income from the income statement actually lands.">
+          <span class="label">Retained earnings</span><span class="val">$3,510</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Final total" data-title="Total liabilities &amp; equity" data-note="$4,140 in liabilities plus $5,510 in equity. It equals total assets of $9,650 exactly — the balance sheet balances, which is the entire point of the name.">
+          <span class="label">Total liabilities &amp; equity</span><span class="val pos">$9,650</span>
+        </div>
+      </div>
+      <div class="annotation-panel" data-reveal>
+        <span class="ap-eyebrow">Line item</span>
+        <h4>Cash</h4>
+        <p>Hover a row to read its annotation.</p>
+        <p class="ap-hint">Assets = liabilities + equity, always. If it doesn't balance, something in the filing is wrong or you've misread a line.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CASH FLOW STATEMENT ============ -->
+  <section class="statement-section wrap" id="cashflow">
+    <div class="statement-head" data-reveal>
+      <span class="badge coral">Where the accrual illusions break</span>
+      <h2 style="margin-top:.5em;">The cash flow statement</h2>
+      <p>Reconciles net income — an accounting figure — back to what actually happened to cash in the bank. This is the statement that's hardest to fake, which is exactly why it matters most.</p>
+    </div>
+    <div class="statement-layout">
+      <div class="statement-table" data-reveal>
+        <div class="st-row" data-tag="Starting point" data-title="Net income" data-note="Pulled straight from the bottom of the income statement. Everything below is an adjustment back to real cash.">
+          <span class="label">Net income</span><span class="val">$1,991</span>
+        </div>
+        <div class="st-row indent" data-tag="Add back" data-title="Depreciation &amp; amortization" data-note="Added back because it reduced net income but never cost Loom a dollar of actual cash this year.">
+          <span class="label">+ Depreciation &amp; amortization</span><span class="val">$410</span>
+        </div>
+        <div class="st-row indent" data-tag="Working capital" data-title="Increase in accounts receivable" data-note="Receivables grew by $150 — customers owe more than last year, meaning revenue was recognized but the cash hasn't arrived. Subtracted because it's income without cash.">
+          <span class="label">(Increase) in receivables</span><span class="val neg">($150)</span>
+        </div>
+        <div class="st-row indent" data-tag="Working capital" data-title="Increase in inventory" data-note="Loom bought more beans and packaging than it used — cash went out the door to build inventory that hasn't sold yet.">
+          <span class="label">(Increase) in inventory</span><span class="val neg">($95)</span>
+        </div>
+        <div class="st-row indent" data-tag="Working capital" data-title="Increase in accounts payable" data-note="Loom is taking slightly longer to pay its own suppliers — effectively holding onto cash a little longer. Added because it's cash retained, not spent.">
+          <span class="label">Increase in payables</span><span class="val">$80</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Cash from operating activities" data-note="The real cash the core business generated — $2,236, notably higher than net income of $1,991. When operating cash flow beats net income, it's usually a healthy sign.">
+          <span class="label">Cash from operating activities</span><span class="val pos">$2,236</span>
+        </div>
+        <div class="st-row indent" data-tag="Investing" data-title="Capital expenditures" data-note="Cash spent on new roasting equipment and a second warehouse — investment in future capacity that the income statement won't fully reflect for years, via depreciation.">
+          <span class="label">Capital expenditures</span><span class="val neg">($860)</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Cash used in investing activities" data-note="Money spent building the business's future capacity rather than running today's operations.">
+          <span class="label">Cash used in investing</span><span class="val neg">($860)</span>
+        </div>
+        <div class="st-row indent" data-tag="Financing" data-title="Repayment of debt" data-note="Scheduled principal paydown on the acquisition term loan — reduces the long-term debt balance on the balance sheet.">
+          <span class="label">Repayment of debt</span><span class="val neg">($200)</span>
+        </div>
+        <div class="st-row indent" data-tag="Financing" data-title="Dividends paid" data-note="Cash returned directly to shareholders. This is the other half of the retained-earnings equation, alongside net income.">
+          <span class="label">Dividends paid</span><span class="val neg">($610)</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Subtotal" data-title="Cash used in financing activities" data-note="Cash flows to and from lenders and owners — separate from the operating business entirely.">
+          <span class="label">Cash used in financing</span><span class="val neg">($810)</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Net change" data-title="Net change in cash" data-note="$2,236 − $860 − $810. The three activities — operating, investing, financing — sum to the total swing in the cash balance for the year.">
+          <span class="label">Net change in cash</span><span class="val pos">$566</span>
+        </div>
+        <div class="st-row" data-tag="Opening balance" data-title="Beginning cash" data-note="Cash on hand at the start of the fiscal year, taken from last year's ending balance sheet.">
+          <span class="label">Beginning cash</span><span class="val">$974</span>
+        </div>
+        <div class="st-row subtotal" data-tag="Final total" data-title="Ending cash" data-note="$974 + $566 = $1,540 — and there's the number again. This must match the cash line on the balance sheet exactly. It's the seam where all three statements are stitched together.">
+          <span class="label">Ending cash</span><span class="val pos">$1,540</span>
+        </div>
+      </div>
+      <div class="annotation-panel" data-reveal>
+        <span class="ap-eyebrow">Line item</span>
+        <h4>Net income</h4>
+        <p>Hover a row to read its annotation.</p>
+        <p class="ap-hint">Operating cash flow consistently below net income, for several years running, is one of the more reliable early-warning patterns in accounting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SYNTHESIS ============ -->
+  <section class="synthesis wrap" id="synthesis">
+    <span class="eyebrow" data-reveal>The seam</span>
+    <h2 data-reveal>Three documents, one arithmetic thread.</h2>
+    <p style="max-width:56ch;margin:var(--sp-3) auto 0;color:var(--text-secondary);" data-reveal>Net income doesn't just vanish at the bottom of the income statement — it's required to reappear in two other places. Follow it:</p>
+    <div class="synthesis-diagram" data-reveal>
+      <div class="synth-flow">
+        <div class="synth-node"><b>Income statement</b>Net income<br><span class="figure up">$1,991</span></div>
+        <span class="synth-arrow">→</span>
+        <div class="synth-node"><b>Balance sheet</b>Beginning RE $2,129<br>+ Net income $1,991<br>− Dividends $610<br>= Retained earnings <span class="figure up">$3,510</span></div>
+        <span class="synth-arrow">→</span>
+        <div class="synth-node"><b>Cash flow statement</b>Starts from net income $1,991<br>reconciles to ending cash<br><span class="figure up">$1,540</span></div>
+      </div>
+    </div>
+    <p style="max-width:56ch;margin:var(--sp-4) auto 0;color:var(--text-tertiary);font-size:var(--fs-sm);" data-reveal>If a company's ending cash doesn't tie to its balance sheet, or retained earnings doesn't move the way net income and dividends imply, that's not a rounding error — it's a filing worth reading twice.</p>
+  </section>
+
+  <!-- ============ SELF CHECK ============ -->
+  <section class="checkme wrap" id="checkme">
+    <span class="eyebrow" data-reveal>Try it cold</span>
+    <h2 data-reveal style="font-size:var(--fs-xl);margin-top:.4em;">Same company, next year. You fill in the blanks.</h2>
+    <p data-reveal style="color:var(--text-secondary);max-width:60ch;margin-top:var(--sp-2);">Loom Coffee Co.'s FY2026: revenue grew to <b style="color:var(--text-primary)">$14,200</b>, COGS was <b style="color:var(--text-primary)">$6,030</b>, operating expenses (SG&amp;A + D&amp;A) totaled <b style="color:var(--text-primary)">$4,640</b>, interest expense was <b style="color:var(--text-primary)">$260</b>, and the effective tax rate held at 24%. Work the income statement cold, then check yourself — no partial credit, no peeking at the section above.</p>
+    <div class="on-paper checkme-paper" data-reveal>
+      <span class="checkme-paper-label">Worksheet — fill in, then grade</span>
+      <div class="checkme-grid">
+        <div class="blank-card"><span class="lbl">Gross profit</span><input type="text" inputmode="decimal" data-answer="8170" placeholder="$ thousands"></div>
+        <div class="blank-card"><span class="lbl">Operating income (EBIT)</span><input type="text" inputmode="decimal" data-answer="3530" placeholder="$ thousands"></div>
+        <div class="blank-card"><span class="lbl">Pretax income</span><input type="text" inputmode="decimal" data-answer="3270" placeholder="$ thousands"></div>
+        <div class="blank-card"><span class="lbl">Income tax</span><input type="text" inputmode="decimal" data-answer="785" placeholder="$ thousands"></div>
+        <div class="blank-card"><span class="lbl">Net income</span><input type="text" inputmode="decimal" data-answer="2485" placeholder="$ thousands"></div>
+        <div class="blank-card"><span class="lbl">Gross margin %</span><input type="text" inputmode="decimal" data-answer="57.5" placeholder="%"></div>
+      </div>
+      <div class="checkme-actions">
+        <button class="btn btn-solid" id="check-answers">Grade me</button>
+        <span class="checkme-result" id="check-result"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer wrap">
+    <span class="eyebrow" data-reveal>Vocabulary first, statements second</span>
+    <h2 data-reveal style="margin-top:var(--sp-3);">Numbers cold?<br>Meet the <em>companies.</em></h2>
+    <a href="../research/" class="btn btn-solid" data-reveal>Go to research<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-wordmark">The Margin</div>
+      <p style="max-width:32ch;">A small publication about reading financial statements, and companies, without pretending it's harder than it is.</p>
+    </div>
+    <div class="footer-col"><h4>Read</h4>
+      <a href="../glossary/">Glossary</a>
+      <a href="../guides/">Guides</a>
+      <a href="../research/">Research</a>
+    </div>
+    <div class="footer-col"><h4>Guides</h4>
+      <a href="#income">Income statement</a>
+      <a href="#balance">Balance sheet</a>
+      <a href="#cashflow">Cash flow statement</a>
+    </div>
+    <div class="footer-col"><h4>Research</h4>
+      <a href="../research/apple.html">Apple</a>
+      <a href="../research/nvidia.html">Nvidia</a>
+      <a href="../research/costco.html">Costco</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Margin. Educational content, not investment advice.</span>
+    <span>Loom Coffee Co. is a fictional example company.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../assets/js/cursor.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scroll.js"></script>
+<script src="../assets/js/guides.js"></script>
+</body>
+</html>
