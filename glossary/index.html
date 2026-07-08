@@ -774,58 +774,63 @@
 }
 </script>
 <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://finblog-murex.vercel.app/#organization",
-    "name": "The Margin",
-    "url": "https://finblog-murex.vercel.app/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://finblog-murex.vercel.app/assets/images/og-default.png",
-      "width": 1200,
-      "height": 630
-    },
-    "description": "A finance publication explaining terms, financial statements, and company research in plain English."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://finblog-murex.vercel.app/#website",
-    "url": "https://finblog-murex.vercel.app/",
-    "name": "The Margin",
-    "publisher": {
-      "@id": "https://finblog-murex.vercel.app/#organization"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://finblog-murex.vercel.app/glossary/?q={search_term_string}"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://finblog-murex.vercel.app/#organization",
+      "name": "The Margin",
+      "url": "https://finblog-murex.vercel.app/",
+      "description": "A finance publication that explains the mechanism instead of the jargon. Plain-language glossary, statement guides, and company research from primary filings.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://finblog-murex.vercel.app/assets/images/og-default.png",
+        "width": 1200,
+        "height": 630
       },
-      "query-input": "required name=search_term_string"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://finblog-murex.vercel.app/"
+      "founder": {
+        "@id": "https://finblog-murex.vercel.app/about/#author"
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Glossary",
-        "item": "https://finblog-murex.vercel.app/glossary/"
+      "email": "contact@themargin.example"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://finblog-murex.vercel.app/#website",
+      "url": "https://finblog-murex.vercel.app/",
+      "name": "The Margin",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://finblog-murex.vercel.app/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://finblog-murex.vercel.app/glossary/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
-    ]
-  }
-]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://finblog-murex.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Glossary",
+          "item": "https://finblog-murex.vercel.app/glossary/"
+        }
+      ]
+    }
+  ]
+}
 </script>
 </head>
 <body>

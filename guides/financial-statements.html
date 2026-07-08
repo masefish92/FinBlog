@@ -35,102 +35,84 @@
 <link rel="stylesheet" href="../assets/css/guides.css">
 <link rel="stylesheet" href="../assets/css/pages.css">
 <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://finblog-murex.vercel.app/#organization",
-    "name": "The Margin",
-    "url": "https://finblog-murex.vercel.app/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://finblog-murex.vercel.app/assets/images/og-default.png",
-      "width": 1200,
-      "height": 630
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://finblog-murex.vercel.app/#organization",
+      "name": "The Margin",
+      "url": "https://finblog-murex.vercel.app/",
+      "description": "A finance publication that explains the mechanism instead of the jargon. Plain-language glossary, statement guides, and company research from primary filings.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://finblog-murex.vercel.app/assets/images/og-default.png",
+        "width": 1200,
+        "height": 630
+      },
+      "founder": {
+        "@id": "https://finblog-murex.vercel.app/about/#author"
+      },
+      "email": "contact@themargin.example"
     },
-    "description": "A finance publication explaining terms, financial statements, and company research in plain English."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://finblog-murex.vercel.app/#website",
-    "url": "https://finblog-murex.vercel.app/",
-    "name": "The Margin",
-    "publisher": {
-      "@id": "https://finblog-murex.vercel.app/#organization"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://finblog-murex.vercel.app/glossary/?q={search_term_string}"
+    {
+      "@type": "WebSite",
+      "@id": "https://finblog-murex.vercel.app/#website",
+      "url": "https://finblog-murex.vercel.app/",
+      "name": "The Margin",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://finblog-murex.vercel.app/#organization"
       },
-      "query-input": "required name=search_term_string"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://finblog-murex.vercel.app/about/#person",
-    "name": "Marcus Mase",
-    "url": "https://finblog-murex.vercel.app/about/",
-    "description": "Marcus Mase is a CPA who works in tech, writing about markets, corporate finance, and how to actually read a financial statement.",
-    "knowsAbout": [
-      "Accounting",
-      "Corporate Finance",
-      "Equity Research",
-      "Financial Statement Analysis"
-    ],
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "professional certification",
-      "name": "Certified Public Accountant (CPA)"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://finblog-murex.vercel.app/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Guides",
-        "item": "https://finblog-murex.vercel.app/guides/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Reading the Three Statements",
-        "item": "https://finblog-murex.vercel.app/guides/financial-statements.html"
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://finblog-murex.vercel.app/glossary/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "How to Read Financial Statements: A Line-by-Line Guide",
-    "description": "Learn to read the income statement, balance sheet, and cash flow statement together, line by line, using one worked example plus a graded practice worksheet.",
-    "image": "https://finblog-murex.vercel.app/assets/images/og-default.png",
-    "datePublished": "2026-07-07",
-    "dateModified": "2026-07-07",
-    "author": {
-      "@type": "Person",
-      "@id": "https://finblog-murex.vercel.app/about/#person",
-      "name": "Marcus Mase",
-      "url": "https://finblog-murex.vercel.app/about/"
     },
-    "publisher": {
-      "@id": "https://finblog-murex.vercel.app/#organization"
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://finblog-murex.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://finblog-murex.vercel.app/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Reading the Three Statements",
+          "item": "https://finblog-murex.vercel.app/guides/financial-statements.html"
+        }
+      ]
     },
-    "mainEntityOfPage": "https://finblog-murex.vercel.app/guides/financial-statements.html"
-  }
-]
+    {
+      "@type": "Article",
+      "headline": "How to Read Financial Statements: A Line-by-Line Guide",
+      "description": "Learn to read the income statement, balance sheet, and cash flow statement together, line by line, using one worked example plus a graded practice worksheet.",
+      "image": "https://finblog-murex.vercel.app/assets/images/og-default.png",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-07-07",
+      "author": {
+        "@id": "https://finblog-murex.vercel.app/about/#author"
+      },
+      "publisher": {
+        "@id": "https://finblog-murex.vercel.app/#organization"
+      },
+      "mainEntityOfPage": "https://finblog-murex.vercel.app/guides/financial-statements.html"
+    }
+  ]
+}
 </script>
 </head>
 <body>
