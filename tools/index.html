@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance Calculators and Tools — The Margin</title>
+<meta name="description" content="Interactive calculators for compound interest and other core finance mechanics — built to show the math, not just spit out a number.">
+<link rel="canonical" href="https://finblog-murex.vercel.app/tools/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-style=%22italic%22 font-family=%22Georgia,serif%22 fill=%22%234bf0b3%22>M</text></svg>">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Margin">
+<meta property="og:title" content="Finance Calculators and Tools — The Margin">
+<meta property="og:description" content="Interactive calculators for compound interest and other core finance mechanics — built to show the math, not just spit out a number.">
+<meta property="og:url" content="https://finblog-murex.vercel.app/tools/">
+<meta property="og:image" content="https://finblog-murex.vercel.app/assets/images/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Finance Calculators and Tools — The Margin">
+<meta name="twitter:description" content="Interactive calculators for compound interest and other core finance mechanics — built to show the math, not just spit out a number.">
+<meta name="twitter:image" content="https://finblog-murex.vercel.app/assets/images/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..800;1,400..800&display=swap">
+
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/guides.css">
+<link rel="stylesheet" href="../assets/css/tools.css">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://finblog-murex.vercel.app/#organization",
+        "name": "The Margin",
+        "url": "https://finblog-murex.vercel.app/",
+        "description": "A finance publication that explains the mechanism instead of the jargon. Plain-language glossary, statement guides, and company research from primary filings.",
+        "logo": { "@type": "ImageObject", "url": "https://finblog-murex.vercel.app/assets/images/og-default.png", "width": 1200, "height": 630 },
+        "founder": { "@id": "https://finblog-murex.vercel.app/about/#author" },
+        "email": "contact@themargin.example"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://finblog-murex.vercel.app/#website",
+        "url": "https://finblog-murex.vercel.app/",
+        "name": "The Margin",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://finblog-murex.vercel.app/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": { "@type": "EntryPoint", "urlTemplate": "https://finblog-murex.vercel.app/glossary/?q={search_term_string}" },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finblog-murex.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://finblog-murex.vercel.app/tools/" }
+        ]
+      }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <a href="../index.html" class="brand">The<span class="mark">Margin</span><small>Finance, annotated</small></a>
+  <nav class="nav-links">
+    <a href="../glossary/" data-section="glossary">Glossary</a>
+    <a href="../guides/" data-section="guides">Guides</a>
+    <a href="../research/" data-section="research">Research</a>
+    <a href="../tools/" data-section="tools">Tools</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</header>
+
+<main id="main">
+  <div class="page-head wrap">
+    <span class="eyebrow">Calculators</span>
+    <h1 data-split>Do the math in the open.</h1>
+    <p>Interactive tools that show their work — every calculator here separates what you put in from what compounding actually gave you, instead of hiding both inside one flat number.</p>
+  </div>
+
+  <div class="wrap section" style="padding-top:0;">
+    <div class="tool-hub-grid">
+      <div class="guide-card" data-reveal>
+        <span class="badge emerald">Available now</span>
+        <h3>Compound interest calculator</h3>
+        <p>Move the sliders on initial investment, monthly contribution, rate, and time horizon, and watch a live chart split your balance into contributions versus interest earned.</p>
+        <a href="compound-interest.html" class="btn btn-solid">Open the calculator<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+      </div>
+      <div class="guide-card is-soon" data-reveal>
+        <span class="badge">In progress</span>
+        <h3>Loan amortization calculator</h3>
+        <p>See exactly how much of each payment goes to principal versus interest, and how that split shifts over the life of a loan.</p>
+        <span class="btn">Coming soon</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="closer wrap">
+    <span class="eyebrow" data-reveal>Numbers still feel abstract?</span>
+    <h2 data-reveal style="margin-top:var(--sp-3);">The glossary is<br>one tab <em>away.</em></h2>
+    <a href="../glossary/" class="btn btn-solid" data-reveal>Open the glossary<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-wordmark">The Margin</div>
+      <p style="max-width:32ch;">A small publication about reading financial statements, and companies, without pretending it's harder than it is.</p>
+    </div>
+    <div class="footer-col"><h4>Read</h4>
+      <a href="../glossary/">Glossary</a>
+      <a href="../guides/">Guides</a>
+      <a href="../research/">Research</a>
+      <a href="../tools/">Tools</a>
+    </div>
+    <div class="footer-col"><h4>Research</h4>
+      <a href="../research/apple.html">Apple</a>
+      <a href="../research/nvidia.html">Nvidia</a>
+      <a href="../research/costco.html">Costco</a>
+    </div>
+    <div class="footer-col"><h4>Site</h4>
+      <a href="../about/">About</a>
+      <a href="../contact/">Contact</a>
+      <a href="../disclaimer/">Disclaimer</a>
+      <a href="../editorial-standards/">Editorial standards</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Margin. Educational content, not investment advice.</span>
+    <span>Written by Marcus Mase.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../assets/js/cursor.js"></script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/scroll.js"></script>
+</body>
+</html>

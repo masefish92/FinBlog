@@ -1,0 +1,98 @@
+/* ============================================================ Compound Interest Calculator ============================================================ */
+
+.calc-card{
+  background:var(--bg-card); border:1px solid var(--hairline); border-radius:var(--radius-lg);
+  padding:var(--sp-5); margin-top:var(--sp-4);
+}
+
+/* ---------- Chart ---------- */
+.calc-chart-head{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:var(--sp-2); flex-wrap:wrap; gap:var(--sp-2); }
+.calc-chart-head h3{ font-family:var(--font-mono); font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:.08em; color:var(--text-tertiary); font-weight:500; }
+.calc-legend{ display:flex; gap:var(--sp-3); }
+.calc-legend span{ display:flex; align-items:center; gap:.5em; font-family:var(--font-mono); font-size:var(--fs-xs); color:var(--text-secondary); text-transform:uppercase; letter-spacing:.04em; }
+.calc-legend i{ width:10px; height:10px; border-radius:2px; display:inline-block; }
+.calc-chart-svg{ width:100%; height:auto; }
+.calc-chart-svg text{ font-family:var(--font-mono); fill:var(--text-tertiary); }
+.calc-chart-svg .axis-line{ stroke:var(--hairline); stroke-width:1; }
+.calc-chart-svg .top-line{ fill:none; stroke:var(--emerald-bright); stroke-width:2; }
+.calc-chart-svg .final-dot{ fill:var(--emerald-bright); stroke:var(--ink-950); stroke-width:2; }
+
+/* ---------- Result row ---------- */
+.calc-results{
+  display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:var(--sp-2);
+  margin-top:var(--sp-5); padding-top:var(--sp-4); border-top:1px solid var(--hairline);
+}
+.calc-result{ text-align:center; padding:var(--sp-2); }
+.calc-result .lbl{ font-family:var(--font-mono); font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:.08em; color:var(--text-tertiary); }
+.calc-result .val{ font-family:var(--font-mono); font-size:var(--fs-lg); margin-top:.3em; display:block; }
+.calc-result.principal .val{ color:var(--amber-bright); }
+.calc-result.interest .val{ color:var(--emerald-bright); }
+.calc-result.total{ background:var(--bg-raised); border-radius:var(--radius-md); }
+.calc-result.total .val{ font-size:var(--fs-xl); color:var(--paper-100); }
+@media (max-width:700px){
+  .calc-results{ grid-template-columns:1fr; }
+  .calc-result.total{ order:-1; padding-block:var(--sp-3); }
+}
+
+/* ---------- Inputs ---------- */
+.calc-inputs{ margin-top:var(--sp-5); padding-top:var(--sp-4); border-top:1px solid var(--hairline); display:flex; flex-direction:column; gap:var(--sp-4); }
+.calc-field{ display:grid; grid-template-columns:180px 1fr 110px; align-items:center; gap:var(--sp-3); }
+.calc-field .lbl{ font-size:var(--fs-sm); color:var(--text-primary); }
+.calc-field .lbl small{ display:block; color:var(--text-tertiary); font-family:var(--font-mono); font-size:var(--fs-xs); margin-top:.15em; }
+@media (max-width:700px){
+  .calc-field{ grid-template-columns:1fr; gap:var(--sp-2); }
+  .calc-field .value-box{ justify-self:start; }
+}
+
+/* Slider track */
+.calc-slider{
+  -webkit-appearance:none; appearance:none; width:100%; height:2px; background:var(--hairline-strong);
+  border-radius:2px; outline:none; cursor:pointer;
+}
+.calc-slider::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none; width:18px; height:18px; border-radius:50%;
+  background:var(--ink-950); border:2px solid var(--emerald-bright); cursor:grab;
+  transition:transform var(--dur-fast) var(--ease-spring), background var(--dur-fast);
+}
+.calc-slider::-webkit-slider-thumb:hover{ transform:scale(1.15); background:var(--emerald-bright); }
+.calc-slider::-moz-range-thumb{
+  width:18px; height:18px; border-radius:50%; background:var(--ink-950); border:2px solid var(--emerald-bright);
+  cursor:grab; transition:transform var(--dur-fast) var(--ease-spring), background var(--dur-fast);
+}
+.calc-slider::-moz-range-thumb:hover{ transform:scale(1.15); background:var(--emerald-bright); }
+.calc-slider::-moz-range-track{ background:var(--hairline-strong); height:2px; border-radius:2px; }
+
+.value-box{
+  display:flex; align-items:center; background:var(--ink-950); border:1px solid var(--hairline-strong);
+  border-radius:var(--radius-sm); padding:.5em .7em; gap:.2em;
+}
+.value-box span.affix{ font-family:var(--font-mono); font-size:var(--fs-sm); color:var(--text-tertiary); }
+.value-box input{
+  width:100%; background:none; border:0; outline:0; color:var(--text-primary); font-family:var(--font-mono);
+  font-size:var(--fs-sm); text-align:right; -moz-appearance:textfield;
+}
+.value-box input::-webkit-outer-spin-button, .value-box input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+
+/* Frequency pills */
+.freq-toggle{ display:flex; gap:.4em; }
+.freq-toggle button{
+  font-family:var(--font-mono); font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:.05em;
+  padding:.5em 1em; border-radius:100px; border:1px solid var(--hairline-strong); color:var(--text-secondary);
+  transition:all var(--dur-fast) var(--ease-out);
+}
+.freq-toggle button:hover{ border-color:var(--text-secondary); color:var(--text-primary); }
+.freq-toggle button.is-active{ background:var(--emerald-bright); color:var(--ink-950); border-color:var(--emerald-bright); font-weight:600; }
+
+/* ---------- Formula / explainer ---------- */
+.calc-formula{
+  font-family:var(--font-mono); font-size:var(--fs-sm); text-align:center; color:var(--text-secondary);
+  background:var(--bg-raised); border:1px dashed var(--hairline-strong); border-radius:var(--radius-md);
+  padding:var(--sp-3); margin-top:var(--sp-4);
+}
+.calc-formula b{ color:var(--emerald-bright); }
+
+.calc-disclaimer{ font-size:var(--fs-xs); color:var(--text-tertiary); margin-top:var(--sp-3); text-align:center; }
+
+/* ---------- Tools hub cards (reuses .guide-card pattern conceptually) ---------- */
+.tool-hub-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:var(--sp-3); }
+@media (max-width:820px){ .tool-hub-grid{ grid-template-columns:1fr; } }
