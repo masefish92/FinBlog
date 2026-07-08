@@ -51,6 +51,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://finblog-murex.vercel.app/tools/loan-amortization.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://finblog-murex.vercel.app/about/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

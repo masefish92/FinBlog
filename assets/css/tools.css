@@ -27,6 +27,10 @@
 .calc-result .val{ font-family:var(--font-mono); font-size:var(--fs-lg); margin-top:.3em; display:block; }
 .calc-result.principal .val{ color:var(--amber-bright); }
 .calc-result.interest .val{ color:var(--emerald-bright); }
+/* Loan context flips the meaning: principal paid is progress (emerald),
+   interest paid is cost (coral) — opposite of the compound calculator. */
+.calc-result.paid-principal .val{ color:var(--emerald-bright); }
+.calc-result.paid-interest .val{ color:var(--coral); }
 .calc-result.total{ background:var(--bg-raised); border-radius:var(--radius-md); }
 .calc-result.total .val{ font-size:var(--fs-xl); color:var(--paper-100); }
 @media (max-width:700px){
